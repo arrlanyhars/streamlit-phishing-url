@@ -1,7 +1,6 @@
 import re
 import numpy as np
 import pandas as pd
-import seaborn as sns
 from sklearn import tree
 from colorama import Fore
 from urllib.parse import urlparse
