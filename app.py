@@ -19,13 +19,10 @@ import pickle
 
 #--------------------------------------------------------------------------------------------#
 # Decoration
-# Title of the app
-#st.sidebar.image('pngegg.png')
 st.set_page_config(
     page_title="Home",
     page_icon="👋",
 )
-
 
 st.sidebar.subheader('What is Phishing URL ?')
 st.sidebar.info(
@@ -48,8 +45,6 @@ st.sidebar.info(
     """,
     icon="📛")
 
-#st.sidebar.subheader('What is Phishing URL Prediction ?')
-
 def new_line(n=1):
     for i in range(n):
         st.write("\n")
@@ -69,10 +64,7 @@ st.divider()
 st.markdown("<h2 align='center'> <b> Input Your URL", unsafe_allow_html=True)
 new_line(1)
 
-#st.title('Welcome to Phising URL Prediction')
 urls = st.text_input("", "")
-
-
 
 
 #--------------------------------------------------------------------------------------------#

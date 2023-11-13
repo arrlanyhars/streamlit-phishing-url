@@ -13,10 +13,10 @@ st.subheader("A coven of digital magicians creating anything wonderful from data
 
 st.divider()
 
-st.write("Charisma Juni / Chacha - Data Scientist Magician")
-st.write("Arryanda Maulani / Yanda - Data Engineer Magician")
-st.write("Dendy Sugandi / Dendy - IT Infrastructure Magician")
-st.write("M Wiwid Setiawan / Wiwid - Code Magician")
-st.write("Rindang Cahyaning / Rindang - IT Consultant Magician")
+st.write("Charisma Juni - Data Scientist Magician")
+st.write("Arryanda Maulani - Data Engineer Magician")
+st.write("Dendy Sugandi - IT Infrastructure Magician")
+st.write("M Wiwid Setiawan - Code Magician")
+st.write("Rindang Cahyaning - IT Consultant Magician")
 
 
