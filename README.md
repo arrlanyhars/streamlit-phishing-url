@@ -17,7 +17,7 @@
 <br>
 
 ## Methods
-Machine Learning: Random Forest Classifier model
+Machine Learning model: Random Forest Classifier algorithm
 <br>
 
 ## Tools
