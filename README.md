@@ -17,8 +17,8 @@
 <br>
 
 ## Methods
-Machine Learning model: Random Forest Classifier algorithm
+<p>Machine Learning model: Random Forest Classifier algorithm</p>
 <br>
 
 ## Tools
-Python Programming Language, Machine Learning, Streamlit
+<p>Python Programming Language, Machine Learning, Streamlit</p>
