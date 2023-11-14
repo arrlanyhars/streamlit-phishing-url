@@ -1,4 +1,4 @@
-# Phising URL Detection using Machine Learning
+# Phishing URL Detection using Machine Learning
 
 <p>Introducing the Phishing URL Detection project, a team effort by Data Wizard for the National Data Science Tournament (TSDN) 2023 competition. This tool allows you to verify the safety of your URLs.</p>
 <br>
@@ -18,6 +18,7 @@
 
 ## Methods
 Machine Learning: Random Forest Classifier model
+<br>
 
 ## Tools
 Python Programming Language, Machine Learning, Streamlit
