@@ -18,3 +18,6 @@
 
 ## Methods
 Machine Learning: Random Forest Classifier model
+
+## Tools
+Python Programming Language, Machine Learning, Streamlit
