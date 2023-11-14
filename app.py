@@ -167,7 +167,7 @@ def URL_Converter(urls):
 
 test_data = URL_Converter(urls)
 
-load_model = pickle.load(open('phising.pkl', 'rb'))
+load_model = pickle.load(open('phising.pkl', 'rb')) # the model has been saved with the name "phising.pkl" and builded using Random Forest Classifier algorithm
 
 prediction = load_model.predict(test_data)
 
