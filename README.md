@@ -14,6 +14,7 @@
 
 ## Check It Out
 <p>Project Link: https://phishing-url-detection-by-datawizard.streamlit.app</p>
+<br>
 
 ## Methods
-Machine Learning using Random Forest Classification model
+Machine Learning: Random Forest Classifier model
