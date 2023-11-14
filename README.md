@@ -25,6 +25,6 @@
 <br>
 
 ## Captures of Demo
-<p><img width="1322" alt="image" src="https://github.com/arrlanyhars/streamlit-phishing-url/assets/71999653/287d9712-ebc8-4862-b732-6d6a36b9cdbf"></p>
-<p><img width="1322" alt="image" src="https://github.com/arrlanyhars/streamlit-phishing-url/assets/71999653/fb4633c4-3ef6-4ecd-b488-1f7cf0862e5b"></p>
+<p><img width="1322" alt="image" src="https://github.com/arrlanyhars/streamlit-phishing-url/assets/71999653/fae59e5b-25aa-449a-af0f-af0446bde820"></p>
+<p><img width="1322" alt="image" src="https://github.com/arrlanyhars/streamlit-phishing-url/assets/71999653/7ec54e27-80da-4ca9-a4e9-1da1b38845fe"></p>
 <p><img width="1322" alt="image" src="https://github.com/arrlanyhars/streamlit-phishing-url/assets/71999653/2bc034c7-24e4-4096-809b-e4882781d331"></p>
