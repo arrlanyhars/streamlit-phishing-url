@@ -15,8 +15,6 @@ st.divider()
 
 st.write("Charisma Juni - Data Scientist Magician")
 st.write("Arryanda Maulani - Data Engineer Magician")
-st.write("Dendy Sugandi - IT Infrastructure Magician")
+st.write("Dendy Sugandi - IT Infrastructure Specialist Magician")
 st.write("M Wiwid Setiawan - Code Magician")
-st.write("Rindang Cahyaning - IT Consultant Magician")
-
-
+st.write("Rindang Cahyaning - IT Consultant Specialist Magician")

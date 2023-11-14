@@ -18,7 +18,7 @@ from PIL import Image
 import pickle
 
 #--------------------------------------------------------------------------------------------#
-# Decoration
+# DECORATION
 st.set_page_config(
     page_title="Home",
     page_icon="👋",
@@ -66,8 +66,8 @@ new_line(1)
 
 urls = st.text_input("", "")
 
-
 #--------------------------------------------------------------------------------------------#
+# APP
 def process_tld(url):
     try:
 #         Extract the top level domain (TLD)
