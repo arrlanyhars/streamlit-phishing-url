@@ -22,3 +22,8 @@
 
 ## Tools
 <p>Python Programming Language, Machine Learning, Streamlit</p>
+
+
+## Capture of Demo
+<p><img width="1322" alt="image" src="https://github.com/arrlanyhars/streamlit-phishing-url/assets/71999653/ef82c39e-1ace-4080-bcff-aa440b2dd619"></p>
+<p><img width="1322" alt="image" src="https://github.com/arrlanyhars/streamlit-phishing-url/assets/71999653/fb4633c4-3ef6-4ecd-b488-1f7cf0862e5b"></p>
