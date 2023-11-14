@@ -8,7 +8,7 @@
 <p>1. Charisma Juni K. as Data Scientist</p>
 <p>2. Arryanda Maulani as Data Engineer</p>
 <p>3. Dendy Sugandi as IT Infrastructure Specialist</p>
-<p>4. Mukhamad Wiwid S. as Software Engineer</p>
+<p>4. M. Wiwid Setiawan as Software Engineer</p>
 <p>5. Rindang Cahyaning as IT Consultant Specialist</p>
 <br>
 
