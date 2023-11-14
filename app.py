@@ -54,7 +54,7 @@ col2.image("pngegg.png", use_column_width=True)
 new_line(2)
 
 # Description
-st.markdown("""Welcome to Phising URL Prediction, the easy-to-use platform for predicting malicious and unsafe URL
+st.markdown("""Welcome to Phising URL Detection, the easy-to-use platform for predicting malicious and unsafe URL
             with just a click. It involves employing predictive technologies, 
     driven by machine learning algorithms, to anticipate and identify potential phishing URLs prior to users accessing them. 
     This proactive strategy seeks to improve cybersecurity by forecasting 
@@ -173,8 +173,8 @@ prediction = load_model.predict(test_data)
 
 if urls:
     if prediction == 1:
-        st.success('This URL is safe :thumbsup:')
+        st.success("This isn't a Phishing URL :thumbsup:")
     else:
-        st.error('Phising URL :thumbsdown:')
+        st.error("Phishing URL :thumbsdown:")
 else:
     pass
