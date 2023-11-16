@@ -6,10 +6,10 @@
 ## Team Members 
 <p>The Data Wizard team comprises the following members:</p>
 <p>1. Charisma Juni K. as Data Scientist</p>
-<p>2. Arryanda Maulani as Data Engineer</p>
+<p>2. Arryanda M. as Data Engineer</p>
 <p>3. Dendy Sugandi as IT Infrastructure Specialist</p>
-<p>4. M. Wiwid Setiawan as Software Engineer</p>
-<p>5. Rindang Cahyaning as IT Consultant Specialist</p>
+<p>4. M. Wiwid S. as Software Engineer</p>
+<p>5. Rindang C. as IT Consultant Specialist</p>
 <br>
 
 ## Check It Out
