@@ -188,7 +188,7 @@ is_valid_url = check_valid_url(urls)
 
 if urls:
     if is_valid_url == False:
-        st.error("This isn't valid URL :thumbsdown:")
+        st.error("Warning: This isn't valid URL. Please check your URL.")
     else:
         test_data = URL_Converter(urls)
     
