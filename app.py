@@ -78,7 +78,6 @@ st.markdown(hide_github_icon, unsafe_allow_html=True)
 
 def process_tld(url):
     try:
-#         Extract the top level domain (TLD)
         res = get_tld(url, as_object = True, fail_silently=False,fix_protocol=True)
         pri_domain= res.parsed_url.netloc
     except :
@@ -87,26 +86,19 @@ def process_tld(url):
 
 def abnormal_url(url):
     hostname = urlparse(url).hostname
-   ## print(hostname)
     hostname = str(hostname)
-   # print(hostname)
     match = re.search(hostname, url)
     if match:
-        # print match.group()
         return 1
     else:
-        # print 'No matching pattern found'
         return 0
     
 def httpSecure(url):
-    htp = urlparse(url).scheme #It supports the following URL schemes: file , ftp , gopher , hdl ,
-                               #http , https ... from urllib.parse
+    htp = urlparse(url).scheme
     match = str(htp)
     if match=='https':
-        # print match.group()
         return 1
     else:
-        # print 'No matching pattern found'
         return 0
     
 def digit_count(url):
@@ -156,7 +148,6 @@ def having_ip_address(url):
 def URL_Converter(urls):
     data= pd.DataFrame()
     data['url'] = pd.Series(urls)
-
     data['url_len'] = data['url'].apply(lambda x: len(str(x)))
     data['domain'] = data['url'].apply(lambda i: process_tld(i))
     feature = ['@','?','-','=','.','#','%','+','$','!','*',',','//']
@@ -170,7 +161,6 @@ def URL_Converter(urls):
     data['having_ip_address'] = data['url'].apply(lambda i: having_ip_address(i))
     print(data.columns)
     X = data.drop(['url','domain'],axis=1)
-
     return X
 
 test_data = URL_Converter(urls)
