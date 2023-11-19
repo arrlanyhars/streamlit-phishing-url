@@ -70,11 +70,38 @@ urls = st.text_input("", "")
 # APP
 # Add custom CSS to hide the GitHub icon
 hide_github_icon = """
-#GithubIcon {
+GithubIcon {
   visibility: hidden;
 }
 """
 st.markdown(hide_github_icon, unsafe_allow_html=True)
+
+def check_valid_url(url):
+    if not url.startswith("http"):
+        url = "http://" + url
+
+    try:
+        ip_pattern = re.compile(r'''
+            ((([01]?\d\d?|2[0-4]\d|25[0-5])\.){3}([01]?\d\d?|2[0-4]\d|25[0-5]))|
+            ((([01]?\d\d?|2[0-4]\d|25[0-5])\.){3}([01]?\d\d?|2[0-4]\d|25[0-5]):\d+)|
+            ((0x[0-9a-fA-F]{1,2}\.){3}(0x[0-9a-fA-F]{1,2}))|
+            (([a-fA-F0-9]{1,4}:){7}[a-fA-F0-9]{1,4})|
+            ([0-9]+(?:\.[0-9]+){3}:[0-9]+)|
+            ((\d|[01]?\d\d|2[0-4]\d|25[0-5])\.){3}(25[0-5]|2[0-4]\d|[01]?\d\d|\d)(/\d{1,2})?
+        ''', re.X)
+
+        has_ip = ip_pattern.search(url)
+
+        if has_ip:
+            return True
+
+        domain = get_tld(url, as_object=True)
+        return domain.fld is not None
+
+    except Exception as e:
+        print(f"Error: {e}")
+        return False
+
 
 def process_tld(url):
     try:
@@ -147,6 +174,9 @@ def having_ip_address(url):
 
 def URL_Converter(urls):
     data= pd.DataFrame()
+    data['valid_url'] = data['url'].apply(check_valid_url)
+    data = data[data['valid_url']]
+    data = data.drop(columns=['valid_url'])
     data['url'] = pd.Series(urls)
     data['url_len'] = data['url'].apply(lambda x: len(str(x)))
     data['domain'] = data['url'].apply(lambda i: process_tld(i))
