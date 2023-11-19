@@ -185,20 +185,26 @@ def URL_Converter(urls):
     return X
 
 is_valid_url = check_valid_url(urls)
-
-if is_valid_url == False:
-    st.error("This isn't valid URL :thumbsdown:")
-else:
-    test_data = URL_Converter(urls)
-
-    load_model = pickle.load(open('phising.pkl', 'rb')) # the model has been saved with the name "phising.pkl" and builded using Random Forest Classifier algorithm
+"""
+if urls:
     
-    prediction = load_model.predict(test_data)
+else:
+    pass
+"""
 
-    if urls:
+if urls:
+    if is_valid_url == False:
+        st.error("This isn't valid URL :thumbsdown:")
+    else:
+        test_data = URL_Converter(urls)
+    
+        load_model = pickle.load(open('phising.pkl', 'rb')) # the model has been saved with the name "phising.pkl" and builded using Random Forest Classifier algorithm
+        
+        prediction = load_model.predict(test_data)
+        
         if prediction == 1:
             st.success("This isn't a Phishing URL :thumbsup:")
         else:
             st.error("Phishing URL :thumbsdown:")
-    else:
-        pass
+else:
+    pass
