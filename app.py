@@ -174,9 +174,6 @@ def having_ip_address(url):
 
 def URL_Converter(urls):
     data= pd.DataFrame()
-    data['valid_url'] = data['url'].apply(check_valid_url)
-    data = data[data['valid_url']]
-    data = data.drop(columns=['valid_url'])
     data['url'] = pd.Series(urls)
     data['url_len'] = data['url'].apply(lambda x: len(str(x)))
     data['domain'] = data['url'].apply(lambda i: process_tld(i))
@@ -193,16 +190,21 @@ def URL_Converter(urls):
     X = data.drop(['url','domain'],axis=1)
     return X
 
-test_data = URL_Converter(urls)
+is_valid_url = check_valid_url(urls)
 
-load_model = pickle.load(open('phising.pkl', 'rb')) # the model has been saved with the name "phising.pkl" and builded using Random Forest Classifier algorithm
-
-prediction = load_model.predict(test_data)
-
-if urls:
-    if prediction == 1:
-        st.success("This isn't a Phishing URL :thumbsup:")
-    else:
-        st.error("Phishing URL :thumbsdown:")
+if is_valid_url == False:
+    st.error("This isn't valid URL :thumbsdown:")
 else:
-    pass
+    test_data = URL_Converter(urls)
+
+    load_model = pickle.load(open('phising.pkl', 'rb')) # the model has been saved with the name "phising.pkl" and builded using Random Forest Classifier algorithm
+    
+    prediction = load_model.predict(test_data)
+
+    if urls:
+        if prediction == 1:
+            st.success("This isn't a Phishing URL :thumbsup:")
+        else:
+            st.error("Phishing URL :thumbsdown:")
+    else:
+        pass
