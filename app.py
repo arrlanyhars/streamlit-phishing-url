@@ -185,12 +185,6 @@ def URL_Converter(urls):
     return X
 
 is_valid_url = check_valid_url(urls)
-"""
-if urls:
-    
-else:
-    pass
-"""
 
 if urls:
     if is_valid_url == False:
